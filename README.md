@@ -68,10 +68,26 @@ and, conversely,
 ```
 
 
+# Concurrency
+
+The two simplest ways to kick off a process:
+
+1. Run an anonymous function
+2. Run a named function in a module, passing a list of arguments
+
+## Spawning
+
+- `spawn` returns a PID
+- `spawn` does not explicitly cause a process to run; it just marks the code as being eligible for execution
+- Linked (`spawn_link`) processes communicate in a 2-way manner such that if one process exits abnormally, it kills the other
+- Monitored (`spawn_monitor`) processes communicate in a 1-way manner such that a process can spawn another and be notified of its termination, but not the other way around
+- To convert exit signals from linked processes to a message that can be handled, you need to *trap the exit*
 
 
 
-> In Elixir:
+# Operators
+
+In Elixir...
 
 #### Pattern matching
 

@@ -89,6 +89,10 @@ The two simplest ways to kick off a process:
 - Think of an *application* as more of a *component* or a *service*
 - A file name ending in `.app` is called an *application specification*, it defines your application to the runtime environment
 
+Our application is defined within `mix.exs` within the `application` function definition.
+The `mod:` option tells OTP the module that serves as the application's entry point.
+The `registered:` option lists the names that our application will register. This ensures cross-application name uniqueness. 
+
 
 # Operators
 

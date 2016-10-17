@@ -11,22 +11,19 @@ defmodule Sequence.Mixfile do
   end
 
   # Configuration for the OTP application
-  #
-  # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger],
-     mod: {Sequence, []}]
+    [
+      applications: [:logger],
+      # Register the application's main entry module
+      mod: { Sequence, [] },
+      # Register the initial state so that it can be retrieved
+      # using Application.get_env
+      env: [initial_value: 456],
+      # Register the name of the main module
+      registered: [ Sequence.Server ]
+    ]
   end
 
-  # Dependencies can be Hex packages:
-  #
-  #   {:mydep, "~> 0.3.0"}
-  #
-  # Or git/path repositories:
-  #
-  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
-  #
-  # Type "mix help deps" for more examples and options
   defp deps do
     []
   end

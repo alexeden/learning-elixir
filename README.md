@@ -91,7 +91,19 @@ The two simplest ways to kick off a process:
 
 Our application is defined within `mix.exs` within the `application` function definition.
 The `mod:` option tells OTP the module that serves as the application's entry point.
-The `registered:` option lists the names that our application will register. This ensures cross-application name uniqueness. 
+The `registered:` option lists the names that our application will register. This ensures cross-application name uniqueness.
+
+# Code releases
+
+#### Terminology:
+
+Release: A bundle that contains a particular version of your application, its dependencies, its configuration, and any metadata it requires to start and stay running
+
+Deployment: The process of getting a release into an environment where it can be used
+
+Hot upgrade: A type of deployment that allows a currently-running application to be updated without being stopped
+
+EXRM (Elixir Release Manager): 
 
 
 # Operators

@@ -1,4 +1,4 @@
-# Sequence
+# SequenceSupervised
 
 **TODO: Add description**
 
@@ -6,19 +6,19 @@
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add `sequence` to your list of dependencies in `mix.exs`:
+  1. Add `sequence_supervised` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:sequence, "~> 0.1.0"}]
+      [{:sequence_supervised, "~> 0.1.0"}]
     end
     ```
 
-  2. Ensure `sequence` is started before your application:
+  2. Ensure `sequence_supervised` is started before your application:
 
     ```elixir
     def application do
-      [applications: [:sequence]]
+      [applications: [:sequence_supervised]]
     end
     ```
 

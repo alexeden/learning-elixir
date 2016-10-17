@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :sequence, key: :value
+#     config :sequence_supervised, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:sequence, :key)
+#     Application.get_env(:sequence_supervised, :key)
 #
 # Or configure a 3rd-party app:
 #

@@ -84,6 +84,11 @@ The two simplest ways to kick off a process:
 - To convert exit signals from linked processes to a message that can be handled, you need to *trap the exit*
 
 
+# Applications
+
+- Think of an *application* as more of a *component* or a *service*
+- A file name ending in `.app` is called an *application specification*, it defines your application to the runtime environment
+
 
 # Operators
 
